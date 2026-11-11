@@ -28,3 +28,5 @@ def bfs(height_map, N):
 
         for dr, dc in DIRECTIONS:
             nr,nc = r+dr,c+dc
+            if 0 <= nr < N and 0 <= nc < N:
+                new_used = fuel[r][c] + move_cost
